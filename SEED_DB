@@ -1,0 +1,76 @@
+-- Вставка користувачiв
+INSERT INTO quiz_db.users (name, created_at, updated_at) VALUES
+    ('John', NOW(), NOW()),
+    ('Alice', NOW(), NOW()),
+    ('Bob', NOW(), NOW()),
+    ('Eva', NOW(), NOW()),
+    ('Mike', NOW(), NOW()),
+    ('Olivia', NOW(), NOW()),
+    ('Daniel', NOW(), NOW()),
+    ('Sophia', NOW(), NOW()),
+    ('William', NOW(), NOW()),
+    ('Ava', NOW(), NOW());
+
+-- Вставка питань
+INSERT INTO quiz_db.questions (text, created_at, updated_at) VALUES
+    ('Яка з ролей в Dota 2 відповідає за атаку та завдання значного пошкодження ворожим героям?', NOW(), NOW()),
+    ('Яка лінія в Dota 2 зазвичай призначена для героїв, які швидко здобувають рівень та золото?', NOW(), NOW()),
+    ('Який герой може використовувати "Blink Dagger" для стрибків на велику відстань?', NOW(), NOW()),
+    ('Яке створіння можна викликати героєм Natures Prophet для допомоги в бою?', NOW(), NOW()),
+    ('Як називається атака, яка завдає шкоду всім ворожим героям в певній області?', NOW(), NOW()),
+    ('Яка здатність героя Juggernaut дає йому імунітет до всіх заклинань та атак?', NOW(), NOW()),
+    ('Який герой має здатність створювати копії себе, щоб завдавати додатковий шкоду ворогам?', NOW(), NOW()),
+    ('Яка здатність героя Earthshaker може відкидати ворожих героїв в повітря?', NOW(), NOW()),
+    ('Яке створіння можна викликати героєм Warlock для допомоги в бою?', NOW(), NOW()),
+    ('Який інструмент дозволяє гравцеві змінювати місцезнаходження свого героя на карті?', NOW(), NOW());
+
+-- Вставка вiдповiдей
+INSERT INTO quiz_db.answers (question_id, answer_text, is_correct, created_at, updated_at) VALUES
+    (1, 'Підтримка', 0, NOW(), NOW()),
+    (1, 'Керi', 1, NOW(), NOW()),
+    (1, 'Хардлайнер', 0, NOW(), NOW()),
+    (2, 'Верхня лінія', 0, NOW(), NOW()),
+    (2, 'Ліс', 1, NOW(), NOW()),
+    (2, 'Середня лінія', 0, NOW(), NOW()),
+    (3, 'Anti-Mage', 0, NOW(), NOW()),
+    (3, 'Queen of Pain', 0, NOW(), NOW()),
+    (3, 'Будь-який', 1, NOW(), NOW()),
+    (4, 'Boar', 0, NOW(), NOW()),
+    (4, 'Treant', 1, NOW(), NOW()),
+    (4, 'Hawk', 0, NOW(), NOW()),
+    (5, 'AoE (Area of Effect)', 1, NOW(), NOW()),
+    (5, 'DPS (Damage per Second)', 0, NOW(), NOW()),
+    (5, 'CC (Crowd Control)', 0, NOW(), NOW()),
+    (6, 'Blade Fury', 1, NOW(), NOW()),
+    (6, 'Healing Ward', 0, NOW(), NOW()),
+    (6, 'Omnislash', 0, NOW(), NOW()),
+    (7, 'Phantom Lancer', 1, NOW(), NOW()),
+    (7, 'Phantom Assassin', 0, NOW(), NOW()),
+    (7, 'Rubick', 0, NOW(), NOW()),
+    (8, 'Fissure', 0, NOW(), NOW()),
+    (8, 'Echo Slam', 1, NOW(), NOW()),
+    (8, 'Enchant Totem', 0, NOW(), NOW()),
+    (9, 'Observer Ward', 0, NOW(), NOW()),
+    (9, 'Smoke of Deceit', 0, NOW(), NOW()),
+    (9, 'Town Portal Scroll', 1, NOW(), NOW()),
+    (10, 'Golem', 1, NOW(), NOW()),
+    (10, 'Dragon', 0, NOW(), NOW()),
+    (10, 'Elemental', 0, NOW(), NOW());
+
+-- Вставка результатов
+INSERT INTO quiz_db.results (user_id, total, correct, incorrect, created_at, updated_at) VALUES
+    (1, 10, 8, 2, NOW(), NOW()),
+    (2, 10, 7, 3, NOW(), NOW()),
+    (3, 10, 9, 1, NOW(), NOW()),
+    (4, 10, 6, 4, NOW(), NOW()),
+    (5, 10, 10, 0, NOW(), NOW()),
+    (6, 10, 5, 5, NOW(), NOW()),
+    (7, 10, 8, 2, NOW(), NOW()),
+    (8, 10, 9, 1, NOW(), NOW()),
+    (9, 10, 7, 3, NOW(), NOW()),
+    (10, 10, 6, 4, NOW(), NOW()),
+    (11, 10, 10, 0, NOW(), NOW()),
+    (12, 10, 5, 5, NOW(), NOW()),
+    (13, 10, 8, 2, NOW(), NOW()),
+    (14, 10, 9, 1, NOW(), NOW()),
+    (15, 10, 7, 3, NOW(), NOW());
